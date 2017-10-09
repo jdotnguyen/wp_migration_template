@@ -7,21 +7,23 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-		<span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_1', '#'); ?></span>
-        <a href="<?php echo get_theme_mod( 'footer_social_1', '#'); ?>" target="_blank" class="footer-social-icons fa fa-facebook-square fa-2x"></a>
-        <a href="<?php echo get_theme_mod( 'footer_social_2', '#'); ?>" target="_blank" class="footer-social-icons fa fa-instagram fa-2x"></a>
-        <a href="<?php echo get_theme_mod( 'footer_social_3', '#'); ?>" target="_blank" class="footer-social-icons fa fa-twitter-square fa-2x"></a>
+		    <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_1', 'FOLLOW US'); ?></span>
+        <a href="<?php echo get_theme_mod( 'footer_social_1', 'https://www.facebook.com/Interlangues1976'); ?>" target="_blank" class="footer-social-icons fa fa-facebook-square fa-2x"></a>
+        <a href="<?php echo get_theme_mod( 'footer_social_2', 'https://www.instagram.com/interlangues76/'); ?>" target="_blank" class="footer-social-icons fa fa-instagram fa-2x"></a>
+        <a href="<?php echo get_theme_mod( 'footer_social_3', 'https://twitter.com/Interlangues76'); ?>" target="_blank" class="footer-social-icons fa fa-twitter-square fa-2x"></a>
+        <br><br>
+        <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_1_1', 'CONTACT'); ?></span>
       </div>
       <div class="col-md-3">
-        <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_2', '#'); ?></span>
+        <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_2', 'ABOUT INTERLANGUES'); ?></span>
 		<?wp_nav_menu( array( 'theme_location' => 'footer-menu1', 'items_wrap' => '<ul class="footer-column-ul">%3$s</ul>' ) ); ?>
       </div>
       <div class="col-md-3">
-        <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_3', '#'); ?></span>
+        <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_3', 'PROGRAMS'); ?></span>
 		<?wp_nav_menu( array( 'theme_location' => 'footer-menu2', 'items_wrap' => '<ul class="footer-column-ul">%3$s</ul>' ) ); ?>
       </div>
       <div class="col-md-3">
-        <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_4', '#'); ?></span>
+        <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_4', 'STUDENT HELP'); ?></span>
         <?wp_nav_menu( array( 'theme_location' => 'footer-menu3', 'items_wrap' => '<ul class="footer-column-ul">%3$s</ul>' ) ); ?>
       </div>
     </div>

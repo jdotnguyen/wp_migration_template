@@ -162,10 +162,16 @@ class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
 }
 
 add_action( 'customize_register', 'footerchild_register_theme_customizer' );
+
 /*
  * Register Our Customizer Stuff Here
  */
 function footerchild_register_theme_customizer( $wp_customize ) {
+	//
+	//
+	// Social Media Section
+	//
+	//
 	// Create custom panel.
 	$wp_customize->add_panel( 'text_blocks', array(
 		'priority'       => 500,
@@ -255,6 +261,23 @@ function footerchild_register_theme_customizer( $wp_customize ) {
 		        'label'    => __( 'Column Header Title 1', 'footerchild' ),
 		        'section'  => 'custom_footer_text2',
 		        'settings' => 'footer_column_header_1',
+		        'type'     => 'text'
+		    )
+	    )
+	);
+	// Add setting
+	$wp_customize->add_setting( 'footer_column_header_1_1', array(
+		 'default'           => __( 'Contact', 'footerchild' ),
+		 'sanitize_callback' => 'sanitize_text'
+	) );
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'custom_footer_column_header_text1_1',
+		    array(
+		        'label'    => __( 'Column Header Title 1-1', 'footerchild' ),
+		        'section'  => 'custom_footer_text2',
+		        'settings' => 'footer_column_header_1_1',
 		        'type'     => 'text'
 		    )
 	    )
