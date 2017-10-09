@@ -1,0 +1,169 @@
+/*
+Theme Name: Interlangues 2017
+Theme URI: http://www.justinnguyen.ca
+Description: Interlangues 2017 theme.
+Version: 1.0
+Author: Justin Nguyen
+Author URI: http://www.justinnguyen.ca
+*/
+
+/* Styles go below */
+
+/* UNIVERSAL */
+body {
+	font-family:Montserrat;
+}
+.navbar {
+	box-shadow:0 1px 2px #909090;
+}
+.header-logo {
+	width:100px;
+}
+
+/* Navigation */
+li.nav-item {
+	position:relative;
+}
+.dropdown-menu > ul {
+	padding:0;
+	list-style:none;
+}
+.dropdown-menu > ul > li {
+	display: block;
+    width: 100%;
+    padding: .25rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+.dropdown-menu > ul > li:hover {
+	color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+.navbar-light .navbar-toggler {
+	cursor:pointer;
+	transition-duration:0.4s;
+}
+button.navbar-toggler:hover {
+	background-color:#ffffff;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-size:12px;
+	padding:0.5rem 0.8rem;
+	text-transform:uppercase;
+}
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  	padding-top: 129px;
+}
+
+.bg-dark {
+	background-color:#404040!important;
+}
+
+footer {
+	padding:40px;
+	color:#ffffff;
+}
+.footer-logo {
+	width:200px;
+	padding:40px;
+}
+.footer-social-icons {
+	padding:0 10px 0 0;
+	color:#ffffff;
+	text-decoration:none;
+	transition-duration:0.4s;
+}
+.footer-social-icons:hover {
+	text-decoration:none;
+	color:#999999;
+}
+.footer-copy {
+	background-color:#303030;
+	color:#ffffff;
+	padding:20px 0 5px;
+}
+.footer-copy p {
+	font-size:11px;
+	text-transform:uppercase;
+}
+.footer-column-ul {
+	list-style:none;
+	padding:0;
+}
+.footer-column-ul li a {
+	color:#ffffff;
+	padding:5px 0;
+	font-size:12px;
+	font-weight:lighter;
+}
+.footer-column-ul li a:hover {
+	text-decoration:underline;
+}
+.footer-column-header {
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:bolder;
+	display:block;
+    margin-bottom: 20px;
+}
+
+/* Google translator */
+#google_translate_element {
+	position: fixed;
+    bottom: 0;
+    left: 10px;
+    width: 200px;
+    background-color: #4954F3;
+}
+.goog-te-combo {
+	display: block;
+    width: 100%;
+    height: 42px!important;
+    padding: .5rem .75rem;
+    font-family: Montserrat!important;
+    font-size: 12px!important;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    position: relative;
+    margin-bottom: -19px!important;
+    margin-top: 0!important;
+    border: 0;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #4954F3;
+}
+.goog-te-gadget {
+	opacity:0;
+}
+#translate-btn {
+	width: 200px;
+    height: 42px;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    font-size: 14px;
+    padding: 12px;
+    background-color: #4954F3;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+#google_translate_element:hover > #translate-btn {
+	background-color:#656fff;
+}
