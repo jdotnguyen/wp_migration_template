@@ -19,6 +19,14 @@ body {
 .header-logo {
 	width:100px;
 }
+.btn {
+    color: #ffffff;
+    border-radius: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 100px;
+}
 
 /* Navigation */
 li.nav-item {
@@ -89,6 +97,7 @@ footer {
 	background-color:#303030;
 	color:#ffffff;
 	padding:20px 0 5px;
+    margin:0 -15px;
 }
 .footer-copy p {
 	font-size:11px;
@@ -103,6 +112,12 @@ footer {
 	padding:5px 0;
 	font-size:12px;
 	font-weight:lighter;
+}
+.footer-column-p, .footer-column-p a {
+    color:#ffffff;
+    padding:5px 0;
+    font-size:12px;
+    font-weight:lighter;
 }
 .footer-column-ul li a:hover {
 	text-decoration:underline;
@@ -166,4 +181,99 @@ footer {
 }
 #google_translate_element:hover > #translate-btn {
 	background-color:#656fff;
+}
+
+/*
+ *
+ * Landing Page
+ *
+ */
+ /* Universal Section padding */
+.intro-row div[class^="col-"], .statistic-row div[class^="col-"], .ottawa-row div[class^="col-"], .program-row div[class^="col-"], .youtube-row div[class^="col-"], .testimonial-row-odd div[class^="col-"], .testimonial-row-even div[class^="col-"] {
+    padding:70px 0;
+    color:#ffffff;
+}
+.intro-row div[class^="col-"] h2, .statistic-row div[class^="col-"] h2, .ottawa-row div[class^="col-"] h2, .program-row div[class^="col-"] h2, .youtube-row div[class^="col-"] h2, .testimonial-row-odd div[class^="col-"] h2, .testimonial-row-even div[class^="col-"] h2 {
+    padding:0 100px;
+    padding-bottom:40px;
+    color:#ffffff;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.intro-row div[class^="col-"] p, .statistic-row div[class^="col-"] p, .ottawa-row div[class^="col-"] p, .program-row div[class^="col-"] p, .youtube-row div[class^="col-"] p, .testimonial-row-odd div[class^="col-"] p, .testimonial-row-even div[class^="col-"] p {
+    padding:0 100px;
+    color:#ffffff;
+    font-size:18px;
+    padding-bottom:40px;
+}
+/* Unique section background colouring */
+.intro-row {
+
+}
+.intro-row div[class^="col-"] h1 {
+    padding:100px;
+    text-align:center;
+}
+.statistic-row {
+    background-color:#51DF37;
+    text-align:center;
+}
+.statistic-row div[class^="col-"] p {
+    padding-bottom:0;
+}
+.statistic-row div[class^="col-"] h1 {
+    font-weight:bold;
+}
+.ottawa-row {
+    background-color:#4954F3;
+}
+.ottawa-column-a {
+    background-color: #f39c12;
+}
+.ottawa-column-a:hover {
+    color:#ffffff;
+    background-color:#f1c40f;
+}
+.program-row {
+    background-color:#ffffff;
+}
+.program-column-media {
+    padding:180px!important;
+}
+.program-column-list {
+    padding:20px!important;
+    background-color:#7f8c8d;
+    text-align:center;
+}
+.program-column-list h2, .program-column-list .footer-column-ul {
+    padding:10px!important;
+}
+.program-column-list .footer-column-ul li a {
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #95a5a6;
+    padding: 10px;
+    margin: 10px 0px;
+    text-decoration:none;
+    transition-duration:0.3s;
+}
+.program-column-list .footer-column-ul li a:hover {
+    background-color: #bdc3c7;
+}
+.youtube-row {
+    background-color:#ED1C24;
+    text-align:center;
+}
+.youtube-column-a {
+    background-color:#27ae60;
+}
+.youtube-column-a:hover {
+    background-color:#2ecc71;
+    color:#ffffff;
+}
+.testimonial-row-odd {
+    background-color:#4D49F6;
+}
+.testimonial-row-even {
+    background-color:#FF0091;
 }
