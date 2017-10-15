@@ -6,7 +6,7 @@
 <footer class="row bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <!-- Contact Info -->
         <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_1_1', 'CONTACT'); ?></span>
         <p class="footer-column-p">
@@ -38,17 +38,17 @@
         <a href="<?php echo get_theme_mod( 'footer_social_3', 'https://twitter.com/Interlangues76'); ?>" target="_blank" class="footer-social-icons fa fa-twitter-square fa-2x"></a>
         <br><br>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <!-- About Interlangues Column -->
         <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_2', 'ABOUT INTERLANGUES'); ?></span>
           
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <!-- Programs Column -->
         <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_3', 'PROGRAMS'); ?></span>
         <?wp_nav_menu( array( 'theme_location' => 'footer-menu2', 'items_wrap' => '<ul class="footer-column-ul">%3$s</ul>' ) ); ?>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <!-- Student Help Column -->
         <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_4', 'STUDENT HELP'); ?></span>
         <?wp_nav_menu( array( 'theme_location' => 'footer-menu3', 'items_wrap' => '<ul class="footer-column-ul">%3$s</ul>' ) ); ?>

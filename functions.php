@@ -279,6 +279,23 @@ function footerchild_register_theme_customizer( $wp_customize ) {
 	    )
 	);
 	// Add setting
+	$wp_customize->add_setting( 'landing_page_statistics_section_1_2', array(
+		 'default'           => __( '75+', 'landingchild' ),
+		 'sanitize_callback' => 'sanitize_text'
+	) );
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'landing_page_statistics_section_1_2',
+		    array(
+		        'label'    => __( 'Big Info 1', 'landingchild' ),
+		        'section'  => 'landing_page_statistics_section',
+		        'settings' => 'landing_page_statistics_section_1_2',
+		        'type'     => 'text'
+		    )
+	    )
+	);
+	// Add setting
 	$wp_customize->add_setting( 'landing_page_statistics_section_2', array(
 		 'default'           => __( 'Years served', 'landingchild' ),
 		 'sanitize_callback' => 'sanitize_text'
@@ -296,6 +313,23 @@ function footerchild_register_theme_customizer( $wp_customize ) {
 	    )
 	);
 	// Add setting
+	$wp_customize->add_setting( 'landing_page_statistics_section_2_1', array(
+		 'default'           => __( '40+', 'landingchild' ),
+		 'sanitize_callback' => 'sanitize_text'
+	) );
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'landing_page_statistics_section_2_1',
+		    array(
+		        'label'    => __( 'Big Stat 2', 'landingchild' ),
+		        'section'  => 'landing_page_statistics_section',
+		        'settings' => 'landing_page_statistics_section_2_1',
+		        'type'     => 'text'
+		    )
+	    )
+	);
+	// Add setting
 	$wp_customize->add_setting( 'landing_page_statistics_section_2_2', array(
 		 'default'           => __( '40+', 'landingchild' ),
 		 'sanitize_callback' => 'sanitize_text'
@@ -305,7 +339,7 @@ function footerchild_register_theme_customizer( $wp_customize ) {
 	    $wp_customize,
 		'landing_page_statistics_section_2_2',
 		    array(
-		        'label'    => __( 'Big Stat 2', 'landingchild' ),
+		        'label'    => __( 'Big Info 2', 'landingchild' ),
 		        'section'  => 'landing_page_statistics_section',
 		        'settings' => 'landing_page_statistics_section_2_2',
 		        'type'     => 'text'
@@ -330,18 +364,35 @@ function footerchild_register_theme_customizer( $wp_customize ) {
 	    )
 	);
 	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_3_3', array(
+	$wp_customize->add_setting( 'landing_page_statistics_section_3_1', array(
 		 'default'           => __( '25', 'landingchild' ),
 		 'sanitize_callback' => 'sanitize_text'
 	) );
 	// Add control
 	$wp_customize->add_control( new WP_Customize_Control(
 	    $wp_customize,
-		'landing_page_statistics_section_3_3',
+		'landing_page_statistics_section_3_1',
 		    array(
 		        'label'    => __( 'Big Stat 3', 'landingchild' ),
 		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_3_3',
+		        'settings' => 'landing_page_statistics_section_3_1',
+		        'type'     => 'text'
+		    )
+	    )
+	);
+	// Add setting
+	$wp_customize->add_setting( 'landing_page_statistics_section_3_2', array(
+		 'default'           => __( '25', 'landingchild' ),
+		 'sanitize_callback' => 'sanitize_text'
+	) );
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'landing_page_statistics_section_3_2',
+		    array(
+		        'label'    => __( 'Big Info 3', 'landingchild' ),
+		        'section'  => 'landing_page_statistics_section',
+		        'settings' => 'landing_page_statistics_section_3_2',
 		        'type'     => 'text'
 		    )
 	    )

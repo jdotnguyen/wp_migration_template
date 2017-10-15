@@ -13,6 +13,9 @@ Author URI: http://www.justinnguyen.ca
 body {
 	font-family:Montserrat;
 }
+.content-container {
+    margin-top:30px;
+}
 .navbar {
 	box-shadow:0 1px 2px #909090;
 }
@@ -64,6 +67,14 @@ button.navbar-toggler:hover {
 	font-size:12px;
 	padding:0.5rem 0.8rem;
 	text-transform:uppercase;
+}
+@media screen and (max-width:869px) {
+    #navbarsExampleDefault {
+        flex-direction:column!important;
+    }
+    .navbar-expand-md .navbar-toggler {
+        display:block!important;
+    }
 }
 
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
