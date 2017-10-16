@@ -14,9 +14,27 @@
     <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 
     <!-- Bootstrap core CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+      .intro-column-content { 
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('<?php echo get_theme_mod('landing_page_intro_section_2', ''); ?>'); 
+        background-size: cover;
+        background-position:center;
+       }
+      .program-column-media { 
+        background: url('<?php echo get_theme_mod('landing_page_program_section_2', ''); ?>'); 
+        background-size: cover;
+      }
+      .ottawa-row { 
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('<?php echo get_theme_mod('landing_page_ottawa_section_5', ''); ?>'); 
+        background-size: cover;
+        background-position: center;
+       }
+    </style>
     <?php wp_head(); ?>
   </head>
 

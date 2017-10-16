@@ -221,21 +221,6 @@ function footerchild_register_theme_customizer( $wp_customize ) {
            )
        )
    	);
-	//Add this background into CSS
-	add_action( 'wp_head', 'mytheme_customize_css_intro');
-	function mytheme_customize_css_intro()
-	{
-	    ?>
-	         <style type="text/css">
-	             .intro-column-content { 
-	             	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-	             	url('<?php echo get_theme_mod('landing_page_intro_section_2', ''); ?>'); 
-	             	background-size: cover;
-	             	background-position:center;
-	             }
-	         </style>
-	    <?php
-	}
 	//
 	// Statistics Section
 	//
@@ -489,21 +474,6 @@ function footerchild_register_theme_customizer( $wp_customize ) {
            )
        )
    	);
-	//Add this background into CSS
-	add_action( 'wp_head', 'mytheme_customize_css_ottawa');
-	function mytheme_customize_css_ottawa()
-	{
-	    ?>
-	         <style type="text/css">
-	             .ottawa-row { 
-	             	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-	             	url('<?php echo get_theme_mod('landing_page_ottawa_section_5', ''); ?>'); 
-	             	background-size: cover;
-				    background-position: center;
-	             }
-	         </style>
-	    <?php
-	}
 	//
 	// Program Section
 	//
@@ -545,19 +515,6 @@ function footerchild_register_theme_customizer( $wp_customize ) {
            )
        )
    	);
-	//Add this background into CSS
-	add_action( 'wp_head', 'mytheme_customize_css_program');
-	function mytheme_customize_css_program()
-	{
-	    ?>
-	         <style type="text/css">
-	             .program-column-media { 
-	             	background: url('<?php echo get_theme_mod('landing_page_program_section_2', ''); ?>'); 
-	             	background-size: cover;
-	             }
-	         </style>
-	    <?php
-	}
 	//
 	// YouTube Section
 	//
