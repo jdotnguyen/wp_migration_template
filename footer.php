@@ -41,7 +41,7 @@
       <div class="col-sm-3">
         <!-- About Interlangues Column -->
         <span class="footer-column-header"><?php echo get_theme_mod( 'footer_column_header_2', 'ABOUT INTERLANGUES'); ?></span>
-          
+        <?wp_nav_menu( array( 'theme_location' => 'footer-menu1', 'items_wrap' => '<ul class="footer-column-ul">%3$s</ul>' ) ); ?>
       </div>
       <div class="col-sm-3">
         <!-- Programs Column -->

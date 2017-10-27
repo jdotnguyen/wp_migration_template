@@ -230,158 +230,53 @@ function footerchild_register_theme_customizer( $wp_customize ) {
 		'priority' => 10
 	) );
 	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_1', array(
-		 'default'           => __( 'Countries', 'landingchild' ),
+	$wp_customize->add_setting( 'landing_page_statistics_section_image_1', array(
+		 'default'           => __( 'Learn More', 'landingchild' ),
 		 'sanitize_callback' => 'sanitize_text'
 	) );
 	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_1',
-		    array(
-		        'label'    => __( 'Header 1', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_1',
-		        'type'     => 'text'
-		    )
-	    )
-	);
-	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_1_1', array(
-		 'default'           => __( '75+', 'landingchild' ),
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+           $wp_customize,
+           'landing_page_statistics_section_image_1',
+           array(
+               'label'      => __( 'Upload a logo', 'landingchild' ),
+               'section'    => 'landing_page_intro_section',
+               'settings'   => 'landing_page_statistics_section_image_1'
+           )
+       )
+   	);
+   	// Add setting
+	$wp_customize->add_setting( 'landing_page_statistics_section_image_2', array(
+		 'default'           => __( 'Learn More', 'landingchild' ),
 		 'sanitize_callback' => 'sanitize_text'
 	) );
 	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_1_1',
-		    array(
-		        'label'    => __( 'Big Stat 1', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_1_1',
-		        'type'     => 'text'
-		    )
-	    )
-	);
-	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_1_2', array(
-		 'default'           => __( '75+', 'landingchild' ),
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+           $wp_customize,
+           'landing_page_statistics_section_image_2',
+           array(
+               'label'      => __( 'Upload a logo', 'landingchild' ),
+               'section'    => 'landing_page_intro_section',
+               'settings'   => 'landing_page_statistics_section_image_2'
+           )
+       )
+   	);
+   	// Add setting
+	$wp_customize->add_setting( 'landing_page_statistics_section_image_3', array(
+		 'default'           => __( 'Learn More', 'landingchild' ),
 		 'sanitize_callback' => 'sanitize_text'
 	) );
 	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_1_2',
-		    array(
-		        'label'    => __( 'Big Info 1', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_1_2',
-		        'type'     => 'text'
-		    )
-	    )
-	);
-	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_2', array(
-		 'default'           => __( 'Years served', 'landingchild' ),
-		 'sanitize_callback' => 'sanitize_text'
-	) );
-	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_2',
-		    array(
-		        'label'    => __( 'Header 2', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_2',
-		        'type'     => 'text'
-		    )
-	    )
-	);
-	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_2_1', array(
-		 'default'           => __( '40+', 'landingchild' ),
-		 'sanitize_callback' => 'sanitize_text'
-	) );
-	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_2_1',
-		    array(
-		        'label'    => __( 'Big Stat 2', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_2_1',
-		        'type'     => 'text'
-		    )
-	    )
-	);
-	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_2_2', array(
-		 'default'           => __( '40+', 'landingchild' ),
-		 'sanitize_callback' => 'sanitize_text'
-	) );
-	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_2_2',
-		    array(
-		        'label'    => __( 'Big Info 2', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_2_2',
-		        'type'     => 'text'
-		    )
-	    )
-	);
-	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_3', array(
-		 'default'           => __( 'Average age', 'landingchild' ),
-		 'sanitize_callback' => 'sanitize_text'
-	) );
-	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_3',
-		    array(
-		        'label'    => __( 'Header 3', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_3',
-		        'type'     => 'text'
-		    )
-	    )
-	);
-	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_3_1', array(
-		 'default'           => __( '25', 'landingchild' ),
-		 'sanitize_callback' => 'sanitize_text'
-	) );
-	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_3_1',
-		    array(
-		        'label'    => __( 'Big Stat 3', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_3_1',
-		        'type'     => 'text'
-		    )
-	    )
-	);
-	// Add setting
-	$wp_customize->add_setting( 'landing_page_statistics_section_3_2', array(
-		 'default'           => __( '25', 'landingchild' ),
-		 'sanitize_callback' => 'sanitize_text'
-	) );
-	// Add control
-	$wp_customize->add_control( new WP_Customize_Control(
-	    $wp_customize,
-		'landing_page_statistics_section_3_2',
-		    array(
-		        'label'    => __( 'Big Info 3', 'landingchild' ),
-		        'section'  => 'landing_page_statistics_section',
-		        'settings' => 'landing_page_statistics_section_3_2',
-		        'type'     => 'text'
-		    )
-	    )
-	);
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+           $wp_customize,
+           'landing_page_statistics_section_image_3',
+           array(
+               'label'      => __( 'Upload a logo', 'landingchild' ),
+               'section'    => 'landing_page_intro_section',
+               'settings'   => 'landing_page_statistics_section_image_3'
+           )
+       )
+   	);
 	//
 	// Ottawa Section
 	//
